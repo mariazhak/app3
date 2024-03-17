@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        shadowColor: Colors.blue,
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -170,10 +171,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         left: MediaQuery.of(context).size.width * 0.3,
                         child: Container(
                           width: MediaQuery.of(context).size.width * 0.4,
-                          height: MediaQuery.of(context).size.height * 0.1,
+                          height: MediaQuery.of(context).size.height * 0.09,
                           child: FloatingActionButton(onPressed: (){},
                               backgroundColor: Colors.blue,
                               shape: const CircleBorder(),
+                              elevation: 15,
                               child: const Text('K',
                               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),)
                           ),
